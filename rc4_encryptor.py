@@ -35,7 +35,7 @@ def rc4_encrypt(key: bytes, plaintext: bytes) -> bytes:
     return bytes(p ^ k for p, k in zip(plaintext, keystream))
 
 def main():
-    KEY = b"p4ssw0rd"  # Change this to your desired key
+    KEY = b"p4ssw0rd"  # we can Change this to our desired key
     
     filename = "file.txt"
     try:
